@@ -1,38 +1,95 @@
+body{
+  background-color: #192331;
+}
 .App {
+  font-family: "Open Sans", sans-serif, Arial;
   text-align: center;
+  justify-content: center;
+  background-color: #3e5d7a;
+  margin: 10rem auto;
+  padding: 10px 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #5777a0;
+  width: 600px;
+  color: #FFFFFF;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#add-btn[disabled], #submit-btn[disabled], #del-btn[disabled]{
+  background-color: #dddddd;
+  color: #999999;
+  cursor: not-allowed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#add-btn {
+  background-color: #007AFF;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+#del-btn{
+  background-color: #ffffff;
+  color: #007AFF;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px 8px;
+  font-weight: bold;
+}
+
+#submit-btn{
+  background-color: #007AFF;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 15px;
+  margin-top: 20px;
+}
+
+#submit-btn:hover, #add-btn:hover {
+  background-color: #2274aa;
+}
+
+#del-btn:hover {
+  background-color: lightgray;
+}
+
+
+
+#field {
   display: flex;
-  flex-direction: column;
+  height: 50px;
+}
+
+
+
+.label {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 18px;
+  padding: 2px;
+  margin: 5px 0;
+  width: 15%;
 }
 
-.App-link {
-  color: #61dafb;
+.input{
+  font-size: 18px;
+  width: 400px;
+  margin: 5px auto;
+  outline: none;
+  border: none;
+  border-radius: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
