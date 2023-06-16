@@ -12,7 +12,7 @@ function App(){
 
   const [msg, setMsg] = useState(server_down_msg);
   const [supportedWebsites, setSupportedWebsites] = useState([]);
-  const server_url = "https://flask-scraper.vercel.app//";
+  const server_url = "https://flask-scraper.vercel.app/";
   const [waiting, setWaiting] = useState(false);
 
   const addInput = () => {
