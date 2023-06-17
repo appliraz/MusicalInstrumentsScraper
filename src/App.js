@@ -97,7 +97,7 @@ function App(){
         setWaiting(false);})
       .then((response) => {        
         console.log(response.data)
-        if(!(response.statusText === "OK")){
+        if(!(response.status == 200)){
           console.log("failed");
           window.alert(response.message);
           console.log(response.data);
